@@ -1,4 +1,3 @@
-/* Estilo base */
 body {
     margin: 0;
     padding: 0;
@@ -258,4 +257,71 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
     border-top: 3px solid #00796B;
+}
+.categorias-destacadas {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.categorias-destacadas h2 {
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+.categorias-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    width: 200px;
+    text-align: center;
+}
+
+.categoria img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.ubicacion {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e0f7fa;
+}
+
+.ubicacion h2 {
+    margin-bottom: 10px;
+    color: #004d4d;
+}
+
+.ubicacion .mapa {
+    margin-top: 20px;
+}
+
+.suscripcion {
+    background-color: #00796b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.suscripcion input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.suscripcion button {
+    padding: 10px 20px;
+    background-color: #004d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
