@@ -1,0 +1,261 @@
+/* Estilo base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+header {
+    background-color: #004d4d;
+}
+
+.contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav {
+    width: 100%;
+    background-color: #004d4d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+nav .logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav .logo img {
+    height: 80px;
+    width: auto;
+}
+
+nav .menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+nav .nav-links div {
+    padding: 10px;
+}
+
+nav .nav-links div a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .nav-links div a:hover {
+    text-decoration: underline;
+}
+
+nav .language-select select {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Hero principal */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f1f8f9;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-texto {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-texto h1 {
+    font-size: 2.5rem;
+    color: #004d4d;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-principal {
+    background-color: #008080;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #006666;
+}
+
+.hero-imagen {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.hero-imagen img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Servicios */
+.info-servicios {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servicio {
+    max-width: 300px;
+    padding: 20px;
+}
+
+.servicio img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.servicio h3 {
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+/* Compra online */
+.compra-online {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.izq1 {
+    width: 40%;
+    text-align: left;
+}
+
+.der1 {
+    width: 40%;
+    text-align: center;
+}
+
+.der1 img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.compra-online h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00796b;
+}
+
+.compra-online p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    nav {
+        justify-content: flex-start;
+    }
+
+    nav .menu-toggle {
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #004d4d;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .compra-online {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .izq1, .der1 {
+        width: 90%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #004d4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 3px solid #00796B;
+}
