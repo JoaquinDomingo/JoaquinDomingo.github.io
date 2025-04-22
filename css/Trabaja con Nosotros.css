@@ -1,16 +1,5 @@
 
 
-/* Estilos comunes para el selector de idioma */
-nav .language-select select {
-    padding: 6px 10px;               /* Relleno interno para mayor espacio */
-    border-radius: 5px;              /* Bordes redondeados */
-    border: 1px solid #ccc;         /* Borde claro para el campo */
-    background-color: white;        /* Fondo blanco para mayor contraste */
-    color: #333;                    /* Color del texto */
-    font-size: 16px;                 /* Tamaño de fuente legible */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia tipográfica consistente */
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -121,7 +110,6 @@ nav .nav-links div a:hover {
 }
 
 
-/* Títulos */
 h1 {
     text-align: center;
     font-size: 2rem;
@@ -136,7 +124,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Formulario */
 .formulario {
     display: flex;
     justify-content: center;
@@ -193,7 +180,6 @@ input[type="submit"]:hover {
     background-color: #006666;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;

@@ -77,7 +77,6 @@ nav .language-select select {
     border: none;
 }
 
-/* Hero principal */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -132,7 +131,6 @@ nav .language-select select {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Servicios */
 .info-servicios {
     display: flex;
     justify-content: space-around;
@@ -159,7 +157,6 @@ nav .language-select select {
     margin-bottom: 10px;
 }
 
-/* Compra online */
 .compra-online {
     display: flex;
     align-items: center;
@@ -198,7 +195,6 @@ nav .language-select select {
     color: #555;
 }
 
-/* Media Query */
 @media (max-width: 768px) {
     nav {
         justify-content: flex-start;
@@ -248,7 +244,6 @@ nav .language-select select {
     }
 }
 
-/* Footer */
 footer {
     background-color: #004d4d;
     color: white;
